@@ -1,0 +1,521 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,400;0,900;1,600 & display=swap');
+
+/*css resets*/
+*{
+    padding:0;
+    margin: 0;   
+   list-style: none;
+    box-sizing: border-box;
+}
+/*efecto de desplazamiento*/
+html{
+    scroll-behavior: smooth;
+   overflow-x: hidden;
+   
+}
+/*---+++-*/
+
+body{
+    font-family:'Futura',;
+    background-image: url("image/abstract-technology-geometric-red-and-black-color-shiny-motion-background-vector.webp");
+    overflow-x: hidden; 
+  
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    
+
+}
+/*navegacion*/
+nav{display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*imagen de la izquierda logo*/
+.logo{
+    width: 180px;
+    margin-left: 20px;
+}
+/*botoncito del menu*/
+.bar-btn{
+font-size: 25px;
+color: rgb(247, 238, 238);
+margin-right: 20px;
+cursor: pointer;
+font-family:'Futura',;
+background-color: rgb(255, 0, 0);
+border-radius: 50%;
+
+}
+/*!!!!!!!-----*/
+.nav-menu{
+    position:fixed;
+    width: 100%;
+    height: 0vh;
+    top: 250px;
+    
+    text-align: center;
+   transition: all.5s;
+  
+   
+    
+}
+.nav-menu li{
+    display:none;
+    line-height: 30px;
+    margin: 40px 0;
+ 
+    transition: all.5s;
+}
+
+.nav-menu li a{
+    font-family:'Futura',;
+box-shadow: #51ef07 2px 2px;
+color: rgb(255, 252, 252);
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+color: rgb(11, 10, 10);
+transition: .3s;
+box-shadow: 5px 5px;}
+
+#check{
+    display: none;
+}
+#check:checked~.nav-menu{
+    height: 350px;
+    background-color: #f30303;
+   text-align: left;
+    
+    
+}
+#check:checked~.nav-menu li{
+    display: block;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/*banner text*/
+.banner-text{
+padding: 0 30px;
+margin-top: 110px;
+text-align: center;
+background: linear-gradient(#ef0202,#f7f5f5);
+color: transparent;
+background-clip:text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+animation: text 5s linear infinite;
+
+
+
+}
+.banner-text h1,h2,h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+    background: linear-gradient(#ef0202,#f7f5f5);
+    color: transparent;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+    
+}
+.banner-text h2{
+margin-top: -100px;
+font-weight: 600;
+font-size: 22px;
+}
+.banner-text span{
+    background: linear-gradient(#ef0202,#f7f5f5);
+    color: transparent;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+    
+}
+
+
+@keyframes text {
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.button1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 255);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.button1:hover{
+    background-color: whitesmoke;
+    color: rgb(4, 96, 209);
+    transition: .5s;
+}
+.button2{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 255);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.button2:hover{
+    background-color: whitesmoke;
+    color: rgb(4, 96, 209);
+    transition: .5s;
+}
+/*tarjetas de trabajos*/
+.card-title {
+    color: #f8f4f4;
+}
+.card-body{
+    background-color: #292d29;
+}
+.card p {
+    font-family:'Futura',;
+    color: #faf8f8;
+    font-size: 18px;
+}
+.section2{
+  
+     text-align: center;
+     /*asi se usa flexbox siempre en el contenedor padre*/
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     font-family:'Futura',;
+justify-content: center;
+align-items: center;
+}
+.section2 p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f7f5f5;
+    font-weight: 900;
+ 
+}
+
+
+.lista li {
+    color: #f7f5f5;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.section2 h2{
+    text-decoration: overline;
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family:'Futura',;
+}
+.section2 img{
+    width: 100%;
+    height: 450px;
+    margin-top: -10px;
+}
+/*MAPA MMARTINEZ*/
+#como-llegar h2{
+    text-align: center;
+    font-size: 40px;
+}
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*FIN MAPA*/
+.section4 h2{
+    font-size: 47px;
+    font-weight: bold;
+}
+
+
+.card img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.section5 h2{
+    font-size: 47px;
+    font-weight: bold;
+    text-align: center;
+}
+.section5 h5{
+    font-size: 18px;
+  color: rgb(252, 247, 246);
+  font-weight: bold;
+}
+.row{
+    color: #f7f5f5;
+   
+}
+.list-unstyled span{
+    font-family:'Futura',;
+    font-weight: bold;
+}
+.btn.btn-primary {
+    background: #e81b1b;
+    background: linear-gradient(-45deg, #ffffff, #51ef07);
+    color: rgb(14, 14, 14);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  }/*
+ .footer{
+    text-align: center;
+ }
+ .footer h6{ color: #fdf7f7;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }*/
+
+ /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    padding: 5rem 0 2.5rem 0;
+   
+  }
+
+  
+  
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #07e7e7;
+  }
+  
+  .footer .copyright {
+    margin-bottom: 0px;
+  }
+  
+  .footer .copyright, .footer .credits {
+    font-size: 14px;
+    color: aliceblue;
+  }
+  
+  .social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f40303;
+    position: relative;
+    text-align: center;
+    transition: .3s background ease;
+    color: #f9fcfc;
+    line-height: 0;
+  }
+  
+  .social a span {
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .social a:hover {
+    color: rgb(236, 0, 166);
+    background: #0e0e0e;
+  }
+  
+  .social a i {
+    line-height: 0;
+  }
+
+
+ .text-3{
+    font-size: 45px;
+    color: rgb(249, 246, 246);
+    text-decoration:none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ }
+ .text-3 img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-size: cover;
+   margin: 0 auto;
+  
+ }
+ .diseñador a{color: #f9f3f3;
+text-decoration:solid;}
+
+ li{
+    font-size: 18px;
+    font-weight: 300 ;
+    font-style: italic;
+ }
+ /*boton whatsapp*/
+.whatsapp{
+    background-color: #3d5e3a;
+    border: 1px solid rgb(245, 237, 237);
+    float:right;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 10px;
+   position:fixed;
+   
+   padding: 25px;
+   transition: ease 0.3s;
+   animation: efecto 1.2s infinite;
+}
+
+
+.whatsapp{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.whatsapp{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(239, 5, 59, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(247, 2, 2, 0);
+    }
+} 
+
+/*adaptable para tablets*/
+@media  screen and (min-width: 920px) {
+    .logo{
+        margin-left: 50px;
+    }
+    nav{
+        height: 100px;
+       
+    }
+    .bar-btn{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+   background-color:none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;  
+       
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+        
+      
+    }
+    .nav-menu li a{
+        font-size: 18px;
+       
+    }
+    .banner-text h1{
+        font-size: 70px;
+margin-bottom: 30px;
+
+    }
+    .banner-text h2{
+        font-size: 40px;
+       
+    }
+    .text-3 img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-size: cover;
+        margin: 0 auto;
+      }
+     
+}
+/*adaptable para celular*/
+@media  screen and (max-width: 405px) {
+    .button1{
+        margin-right:100px;
+        padding: 10px 30px;
+        background-color: rgb(0, 0, 255);
+        color: whitesmoke;
+        border-radius: 5px;
+      
+    }   
+    .button2{
+        margin-left: -100px;
+        padding: 10px 30px;
+        background-color: rgb(0, 0, 255);
+        color: whitesmoke;
+        border-radius: 5px;
+       
+    }   
+}
+@media  screen and (max-width: 365px) {
+    .button1{
+        margin-right:50px;
+        padding: 10px 10px;
+        background-color: rgb(0, 0, 255);
+        color: whitesmoke;
+        border-radius: 5px;
+      
+    }   
+    .button2{
+        margin-left: -50px;
+        padding: 10px 10px;
+        background-color: rgb(0, 0, 255);
+        color: whitesmoke;
+        border-radius: 5px;
+       
+    }   
+}
+    
+@media  screen and (max-width: 281px) {
+    .button1{
+        margin-right:30px;
+        padding: 5px 5px;
+        background-color: rgb(0, 0, 255);
+        color: whitesmoke;
+        border-radius: 5px;
+      
+    }   
+    .button2{
+        margin-left: -30px;
+        padding: 5px 5px;
+        background-color: rgb(0, 0, 255);
+        color: whitesmoke;
+        border-radius: 5px;
+       
+    }   
+}
+
